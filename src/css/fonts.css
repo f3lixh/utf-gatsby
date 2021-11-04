@@ -1,0 +1,16 @@
+:root {
+  --font-size-1: 16px;
+  --font-family-std: "Teletext Type 1", "Courier New", monospace;
+}
+
+@font-face {
+  font-family: "Teletext Type 1";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/TeletextType1/TeletextType1-Regular.woff2") format("woff2");
+}
+
+body {
+  font-family: var(--font-family-std);
+  font-size: var(--font-size-1);
+}
