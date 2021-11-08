@@ -8,6 +8,8 @@ body {
   font-size: var(--font-size-1);
   background-color: black;
   color: white;
+
+  overflow-x: hidden;
 }
 
 * {
