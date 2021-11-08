@@ -19,10 +19,10 @@ const Navbar = ({ pageIndex }) => {
       </div>
       <ul id="nav-ul">
         <li>
-          <Link to="/about">About</Link>
+          <Link to="/fonts/">Fonts</Link>
         </li>
         <li>
-          <Link to="/fonts/">Fonts</Link>
+          <Link to="/about">About</Link>
         </li>
         <li>
           <Link to="/custom">Custom</Link>

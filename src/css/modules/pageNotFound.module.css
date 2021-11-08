@@ -1,0 +1,112 @@
+:root {
+  --navbar-link-margin: 50px;
+  --navbar-background-color: "white";
+  --navbar-height: 56px;
+  --navbar-fontSize: 18px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.colors {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.firstRow {
+  display: grid;
+  height: 75%;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.middleRow {
+  display: grid;
+  height: 10%;
+  grid-template-columns: repeat(7, 1fr);
+}
+
+.lastRow {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  height: 15%;
+}
+
+.special {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.special div:first-child {
+  background-color: rgb(8, 8, 8);
+}
+
+.special div:nth-child(2) {
+  background-color: rgb(14, 14, 14);
+}
+
+.special div:last-child {
+  background-color: rgb(24, 24, 24);
+}
+
+.error {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  position: relative;
+}
+
+.error span:first-child {
+  font-family: "Teletext Type 2";
+  font-size: 120px;
+  margin-bottom: 0px;
+  padding: 20px 40px;
+  color: red;
+  background-color: black;
+}
+
+.error span:not(:first-child) {
+  background-color: black;
+  padding: 20px 40px;
+  font-size: 50px;
+}
+
+@media (max-width: 768px) {
+  .colors {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .firstRow {
+    width: 75%;
+  }
+
+  .middleRow {
+    width: 10%;
+  }
+
+  .lastRow {
+    width: 15%;
+  }
+
+  .lastRow,
+  .middleRow,
+  .firstRow {
+    height: 100%;
+    grid-template-columns: unset;
+  }
+  .error span:first-child {
+    font-size: 100px;
+  }
+
+  .error span:not(:first-child) {
+    padding: 20px 30px;
+    font-size: 30px;
+  }
+}

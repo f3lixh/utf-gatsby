@@ -2,6 +2,7 @@
   display: grid;
   gap: 10px;
   grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
 }
 
 .post {
@@ -24,7 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: red;
+  background-color: blue;
   width: 100%;
 }
 

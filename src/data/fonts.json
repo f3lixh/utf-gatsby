@@ -7,7 +7,7 @@
       "fontIndex": 201,
       "isVariable": true,
       "isProject": false,
-      "glyphsCount": 506,
+      "characters": 506,
       "styles": 18,
       "features": [
         "frac",
@@ -33,7 +33,7 @@
       "fontIndex": 214,
       "isVariable": false,
       "isProject": false,
-      "glyphsCount": 493,
+      "characters": 493,
       "styles": 2,
       "features": [
         "frac",
@@ -57,7 +57,7 @@
       "fontIndex": 278,
       "isProject": false,
       "isVariable": false,
-      "glyphsCount": 309,
+      "characters": 309,
       "styles": 1,
       "features": [
         "frac",
@@ -81,7 +81,7 @@
       "fontIndex": 254,
       "isProject": false,
       "isVariable": false,
-      "glyphsCount": 413,
+      "characters": 413,
       "styles": 2,
       "features": [
         "frac",
@@ -113,7 +113,7 @@
       "fontIndex": 267,
       "isProject": false,
       "isVariable": false,
-      "glyphsCount": 336,
+      "characters": 336,
       "styles": 5,
       "features": [
         "frac",
@@ -136,7 +136,7 @@
       "fontIndex": 288,
       "isProject": false,
       "isVariable": false,
-      "glyphsCount": 173,
+      "characters": 173,
       "styles": 1,
       "features": [],
       "date": "2020-07-06T00:00:00.000Z",
@@ -155,7 +155,7 @@
       "fontIndex": 276,
       "isProject": false,
       "isVariable": false,
-      "glyphsCount": 575,
+      "characters": 575,
       "styles": 1,
       "features": [
         "frac",
@@ -191,7 +191,7 @@
       "fontIndex": 205,
       "isProject": false,
       "isVariable": true,
-      "glyphsCount": 540,
+      "characters": 540,
       "styles": 2,
       "features": [
         "liga"
@@ -211,7 +211,7 @@
       "fontIndex": 207,
       "isProject": false,
       "isVariable": false,
-      "glyphsCount": 239,
+      "characters": 239,
       "styles": 3,
       "features": [],
       "date": "2020-08-06T00:00:00.000Z",
@@ -231,7 +231,7 @@
       "fontIndex": 209,
       "isProject": false,
       "isVariable": false,
-      "glyphsCount": 250,
+      "characters": 250,
       "styles": 1,
       "features": [],
       "date": "2020-07-05T00:00:00.000Z",
@@ -249,7 +249,7 @@
       "fontIndex": 229,
       "isProject": false,
       "isVariable": false,
-      "glyphsCount": 293,
+      "characters": 293,
       "styles": 2,
       "features": [
         "liga",
@@ -270,7 +270,7 @@
       "fontIndex": 289,
       "isProject": false,
       "isVariable": false,
-      "glyphsCount": 471,
+      "characters": 471,
       "styles": 4,
       "features": [],
       "date": "2019-09-02T00:00:00.000Z",
@@ -288,7 +288,7 @@
       "fontIndex": 274,
       "isProject": false,
       "isVariable": false,
-      "glyphsCount": 361,
+      "characters": 361,
       "styles": 4,
       "features": [
         "frac"
@@ -308,7 +308,7 @@
       "fontIndex": 401,
       "isProject": true,
       "isVariable": false,
-      "glyphsCount": 121,
+      "characters": 121,
       "styles": 1,
       "date": "2020-05-31T00:00:00.000Z",
       "tags": [
@@ -325,7 +325,7 @@
       "fontIndex": 401,
       "isProject": true,
       "isVariable": false,
-      "glyphsCount": 121,
+      "characters": 121,
       "styles": 1,
       "date": "2020-05-31T00:00:00.000Z",
       "tags": [
@@ -342,7 +342,7 @@
       "fontIndex": 402,
       "isProject": true,
       "isVariable": false,
-      "glyphsCount": 79,
+      "characters": 79,
       "styles": 1,
       "date": "2021-12-31T00:00:00.000Z",
       "tags": [
@@ -361,7 +361,7 @@
       "fontIndex": 403,
       "isProject": true,
       "isVariable": false,
-      "glyphsCount": 94,
+      "characters": 94,
       "styles": 1,
       "date": "2021-12-31T00:00:00.000Z",
       "tags": [
@@ -378,7 +378,7 @@
       "fontIndex": 404,
       "isProject": false,
       "isVariable": false,
-      "glyphsCount": 240,
+      "characters": 240,
       "features": [
         "frac"
       ],
@@ -399,7 +399,7 @@
       "fontIndex": 405,
       "isProject": true,
       "isVariable": false,
-      "glyphsCount": 77,
+      "characters": 77,
       "styles": 1,
       "date": "2021-12-31T00:00:00.000Z",
       "tags": [
@@ -416,7 +416,7 @@
       "fontIndex": 445,
       "isProject": true,
       "isVariable": false,
-      "glyphsCount": 507,
+      "characters": 507,
       "styles": 18,
       "date": "2021-12-31T00:00:00.000Z",
       "tags": [
@@ -433,7 +433,7 @@
       "fontIndex": 447,
       "isProject": true,
       "isVariable": false,
-      "glyphsCount": 508,
+      "characters": 508,
       "styles": 2,
       "date": "2021-12-31T00:00:00.000Z",
       "tags": [
@@ -450,7 +450,7 @@
       "fontIndex": 478,
       "isProject": true,
       "isVariable": true,
-      "glyphsCount": 575,
+      "characters": 575,
       "styles": 4,
       "date": "2021-12-31T00:00:00.000Z",
       "tags": [

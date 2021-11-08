@@ -1,0 +1,53 @@
+:root {
+  --footer-fontSize: 18px;
+}
+
+.navigation {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+  grid-auto-flow: column;
+}
+
+.navigation a {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-position-y: 4px;
+  height: 35px;
+  background-image: url("../../images/util/dot.svg");
+  background-repeat: repeat-x;
+}
+
+.navigation a span {
+  background-color: black;
+}
+
+.navigation a span:first-child {
+  padding-right: 20px;
+}
+
+.navigation a span:last-child {
+  padding-left: 20px;
+}
+
+@media (max-width: 1200px) {
+  .navigation {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-auto-flow: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    grid-auto-flow: column;
+  }
+}

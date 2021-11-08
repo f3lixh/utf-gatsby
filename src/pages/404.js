@@ -1,54 +1,52 @@
-import * as React from "react"
-import { Link } from "gatsby"
+import * as React from "react";
+import { Link } from "gatsby";
+import Layout from "../components/Layout";
+import * as pageNotFound from "../css/modules/pageNotFound.module.css";
+import * as color from "../css/modules/color.module.css";
 
-// styles
-const pageStyles = {
-  color: "#232129",
-  padding: "96px",
-  fontFamily: "-apple-system, Roboto, sans-serif, serif",
-}
-const headingStyles = {
-  marginTop: 0,
-  marginBottom: 64,
-  maxWidth: 320,
-}
-
-const paragraphStyles = {
-  marginBottom: 48,
-}
-const codeStyles = {
-  color: "#8A6534",
-  padding: 4,
-  backgroundColor: "#FFF4DB",
-  fontSize: "1.25rem",
-  borderRadius: 4,
-}
-
-// markup
 const NotFoundPage = () => {
   return (
-    <main style={pageStyles}>
-      <title>Not found</title>
-      <h1 style={headingStyles}>Page not found</h1>
-      <p style={paragraphStyles}>
-        Sorry{" "}
-        <span role="img" aria-label="Pensive emoji">
-          😔
-        </span>{" "}
-        we couldn’t find what you were looking for.
-        <br />
-        {process.env.NODE_ENV === "development" ? (
-          <>
-            <br />
-            Try creating a page in <code style={codeStyles}>src/pages/</code>.
-            <br />
-          </>
-        ) : null}
-        <br />
-        <Link to="/">Go home</Link>.
-      </p>
-    </main>
-  )
-}
+    <Layout pageTitle="Page not Found">
+      <section className={pageNotFound.container}>
+        <div className={pageNotFound.colors}>
+          <div className={pageNotFound.firstRow}>
+            <div className={color.white}></div>
+            <div className={color.yellow}></div>
+            <div className={color.cyan}></div>
+            <div className={color.green}></div>
+            <div className={color.pink}></div>
+            <div className={color.red}></div>
+            <div className={color.blue}></div>
+          </div>
+          <div className={pageNotFound.middleRow}>
+            <div className={color.blue}></div>
+            <div className={color.black}></div>
+            <div className={color.pink}></div>
+            <div className={color.black}></div>
+            <div className={color.cyan}></div>
+            <div className={color.black}></div>
+            <div className={color.white}></div>
+          </div>
+          <div className={pageNotFound.lastRow}>
+            <div style={{ backgroundColor: "#00214C" }}></div>
+            <div className={color.white}></div>
+            <div style={{ backgroundColor: "#320B6A" }}></div>
+            <div className={color.black}></div>
+            <div className={pageNotFound.special}>
+              <div></div>
+              <div></div>
+              <div></div>
+            </div>
+            <div className={color.black}></div>
+          </div>
+        </div>
+        <div className={pageNotFound.error}>
+          <span>404</span>
+          <span>PAGE NOT FOUND</span>
+        </div>
+      </section>
+    </Layout>
+  );
+};
 
-export default NotFoundPage
+export default NotFoundPage;

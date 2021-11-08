@@ -1,0 +1,24 @@
+.cyan {
+  background-color: var(--cyan);
+}
+.blue {
+  background-color: var(--blue);
+}
+.red {
+  background-color: var(--red);
+}
+.green {
+  background-color: var(--green);
+}
+.yellow {
+  background-color: var(--yellow);
+}
+.pink {
+  background-color: var(--pink);
+}
+.white {
+  background-color: var(--white);
+}
+.black {
+  background-color: var(--black);
+}

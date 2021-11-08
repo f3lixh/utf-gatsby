@@ -1,6 +1,14 @@
 :root {
   --font-size-1: 16px;
   --font-family-std: "Teletext Type 1", "Courier New", monospace;
+  --cyan: #00ffff;
+  --blue: #0000ff;
+  --red: #ff0000;
+  --green: #00ff00;
+  --yellow: #ffff00;
+  --pink: #ff00ff;
+  --white: #fff;
+  --black: #000;
 }
 
 html,
