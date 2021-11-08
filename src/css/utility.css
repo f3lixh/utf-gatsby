@@ -3,13 +3,16 @@
   --font-family-std: "Teletext Type 1", "Courier New", monospace;
 }
 
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--font-family-std);
   font-size: var(--font-size-1);
   background-color: black;
   color: white;
-
-  overflow-x: hidden;
 }
 
 * {
