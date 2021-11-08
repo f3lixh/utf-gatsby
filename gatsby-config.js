@@ -1,7 +1,26 @@
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "utf",
+    title: "unofficial type foundry",
   },
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+    "gatsby-transformer-sharp",
+    "gatsby-image",
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `thumbnails`,
+        path: `${__dirname}/src/images/font_thumbnails`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `pages`,
+        path: `${__dirname}/src/pages`,
+      },
+    },
+  ],
 };

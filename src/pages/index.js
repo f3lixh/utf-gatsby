@@ -1,70 +1,25 @@
 import * as React from "react";
-import { Link } from "gatsby";
+
+import FontBlog from "../components/FontBlog";
+
 import Layout from "../components/Layout";
 
 import "../css/fonts.css";
-// styles
-
-// data
-/* const links = [
-  {
-    text: "Tutorial",
-    url: "https://www.gatsbyjs.com/docs/tutorial/",
-    description:
-      "A great place to get started if you're new to web development. Designed to guide you through setting up your first Gatsby site.",
-    color: "#E95800",
-  },
-  {
-    text: "How to Guides",
-    url: "https://www.gatsbyjs.com/docs/how-to/",
-    description:
-      "Practical step-by-step guides to help you achieve a specific goal. Most useful when you're trying to get something done.",
-    color: "#1099A8",
-  },
-  {
-    text: "Reference Guides",
-    url: "https://www.gatsbyjs.com/docs/reference/",
-    description:
-      "Nitty-gritty technical descriptions of how Gatsby works. Most useful when you need detailed information about Gatsby's APIs.",
-    color: "#BC027F",
-  },
-  {
-    text: "Conceptual Guides",
-    url: "https://www.gatsbyjs.com/docs/conceptual/",
-    description:
-      "Big-picture explanations of higher-level Gatsby concepts. Most useful for building understanding of a particular topic.",
-    color: "#0D96F2",
-  },
-  {
-    text: "Plugin Library",
-    url: "https://www.gatsbyjs.com/plugins",
-    description:
-      "Add functionality and customize your Gatsby site or app with thousands of plugins built by our amazing developer community.",
-    color: "#8EB814",
-  },
-  {
-    text: "Build and Host",
-    url: "https://www.gatsbyjs.com/cloud",
-    badge: true,
-    description:
-      "Now you’re ready to show the world! Give your Gatsby site superpowers: Build and host on Gatsby Cloud. Get started for free!",
-    color: "#663399",
-  },
-];
- */
-// markup
+import JSONData from "../data/fonts.json";
+import { container } from "../css/modules/fontblog.module.css";
 
 const IndexPage = () => {
   return (
-    <Layout pageTitle="Home of UTF">
-      <h1>Lul</h1>
-      <p>
-        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error
-        asperiores perspiciatis rem magnam similique iusto explicabo est nostrum
-        sequi? Aliquid cum est eum tenetur dolore necessitatibus minus deleniti
-        nisi sapiente.
-      </p>
-      <Link to="/about">About</Link>
+    <Layout pageTitle="Home of UTF" pageIndex="101">
+      <section className={container}>
+        {JSONData.fonts.map((font) => {
+          if (font.isProject === false) {
+            return <FontBlog fontData={font} key={font.fontIndex} />;
+          } else {
+            return "";
+          }
+        })}
+      </section>
     </Layout>
   );
 };

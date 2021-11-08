@@ -4,7 +4,7 @@ import Layout from "../components/Layout";
 // Step 2: Define your component
 const Custom = () => {
   return (
-    <Layout pageTitle="Custom">
+    <Layout pageTitle="Custom" pageIndex="501">
       <h1>Custom Typeface</h1>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sed

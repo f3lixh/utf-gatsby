@@ -2,10 +2,10 @@ import * as React from "react";
 import Footer from "./Footer";
 import Navbar from "./Navbar";
 
-const Layout = ({ children, pageTitle }) => {
+const Layout = ({ children, pageTitle, pageIndex }) => {
   return (
     <>
-      <Navbar></Navbar>
+      <Navbar pageIndex={pageIndex}></Navbar>
       <title>{pageTitle}</title>
       {children}
       <Footer></Footer>

@@ -1,0 +1,72 @@
+:root {
+  --font-index-fontSize: 18px;
+}
+
+.container {
+  font-size: var(--font-index-fontSize);
+  display: grid;
+  gap: 50px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.item {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0px;
+  background-position-y: 4px;
+  background-image: url("../../images/util/dot.svg");
+}
+
+.item span {
+  background-color: black;
+}
+
+.item span:first-child {
+  padding-right: 25px;
+}
+
+.item span:last-child {
+  padding-left: 25px;
+}
+
+.item::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: calc(var(--navbar-height) * 0.08);
+  background-color: blue;
+
+  transform: scale(0, 1);
+  transform-origin: 0% 100%;
+  transition: transform 0.3s ease;
+}
+
+.item:hover::after {
+  transform: scale(1, 1);
+}
+
+.initial {
+  user-select: none;
+  padding: 20px 0px;
+  width: 170px;
+  text-align: center;
+  line-height: var(--font-index-fontSize);
+
+  background-color: cyan;
+  color: blue;
+}
+
+.initial:not(:first-child) {
+  margin-top: 30px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    gap: 0px;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
