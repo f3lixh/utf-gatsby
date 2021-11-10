@@ -17,10 +17,6 @@ const FontIndex = () => {
   const half = Math.ceil(JSONData.fonts.length / 2);
   var firstAreaFonts = JSONData.fonts.slice(0, half);
   var secondAreaFonts = JSONData.fonts.slice(half);
-
-  console.log(firstAreaFonts);
-  console.log(secondAreaFonts);
-
   sortFonts();
 
   function buildme(font) {
@@ -51,9 +47,6 @@ const FontIndex = () => {
       sortFonts();
     }
   }
-
-  console.log(firstAreaFonts);
-  console.log(secondAreaFonts);
 
   return (
     <Layout pageTitle="Font Index" pageIndex="105">

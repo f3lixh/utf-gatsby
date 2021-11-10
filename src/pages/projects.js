@@ -1,0 +1,48 @@
+import * as React from "react";
+import Layout from "../components/Layout";
+import { graphql, useStaticQuery } from "gatsby";
+import * as projects from "../css/modules/projects.module.css";
+import JSONData from "../data/fonts.json";
+
+const Projects = () => {
+  JSONData.fonts.sort((a, b) =>
+    a.name > b.name ? 1 : b.name > a.name ? -1 : 0
+  );
+  const data = useStaticQuery(graphql`
+    query {
+      allFile {
+        edges {
+          node {
+            name
+            publicURL
+          }
+        }
+      }
+    }
+  `);
+  function getPublicURL(fontName) {
+    return data.allFile.edges.find((font) => {
+      return font.node.name === fontName;
+    }).node.publicURL;
+  }
+
+  return (
+    <Layout pageTitle="Projects" pageIndex="401">
+      <section className={projects.container}>
+        {JSONData.fonts.map((font) => {
+          if (font.isProject == true) {
+            return (
+              <article className={projects.item} key={font.fontIndex}>
+                <img src={getPublicURL(font.slug)} alt={font.name} />
+              </article>
+            );
+          } else {
+            return "";
+          }
+        })}
+      </section>
+    </Layout>
+  );
+};
+
+export default Projects;

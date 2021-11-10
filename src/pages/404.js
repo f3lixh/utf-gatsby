@@ -6,7 +6,7 @@ import * as color from "../css/modules/color.module.css";
 
 const NotFoundPage = () => {
   return (
-    <Layout pageTitle="Page not Found">
+    <Layout pageTitle="Page not Found" pageIndex="404">
       <section className={pageNotFound.container}>
         <div className={pageNotFound.colors}>
           <div className={pageNotFound.firstRow}>

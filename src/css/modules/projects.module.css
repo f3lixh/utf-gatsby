@@ -1,0 +1,21 @@
+:root {
+  --project-gap: 14px;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--project-gap);
+}
+
+.item {
+  border-radius: 2px;
+  width: calc(50% - var(--project-gap));
+
+  height: calc(50vh - var(--navbar-height));
+  display: flex;
+  justify-content: space-around; /* ! */
+  align-items: center;
+  flex-flow: column;
+  /* padding: 10px; */
+}
