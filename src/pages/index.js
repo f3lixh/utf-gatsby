@@ -54,7 +54,7 @@ const IndexPage = () => {
     ].node.publicURL;
   }
 
-  function init() {
+  /*  function init() {
     document.querySelectorAll("ul.sortingDropDown > li").forEach((li) => {
       li.addEventListener("click", (e) => {
         document.querySelectorAll("[data-dropdown]").forEach((dropdown) => {
@@ -64,7 +64,7 @@ const IndexPage = () => {
     });
   }
 
-  init();
+  init(); */
   return (
     <Layout pageTitle="Home of UTF" pageIndex="101">
       <section className={index.hero}>
