@@ -1,5 +1,4 @@
 import * as React from "react";
-import { Link } from "gatsby";
 import Layout from "../components/Layout";
 import * as pageNotFound from "../css/modules/pageNotFound.module.css";
 import * as color from "../css/modules/color.module.css";

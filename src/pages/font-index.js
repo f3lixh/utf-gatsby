@@ -20,7 +20,7 @@ const FontIndex = () => {
   sortFonts();
 
   function buildme(font) {
-    if (tempInitial != font.name.charAt(0).toUpperCase()) {
+    if (tempInitial !== font.name.charAt(0).toUpperCase()) {
       tempInitial = font.name.charAt(0).toUpperCase();
       return (
         <>

@@ -1,0 +1,27 @@
+.hero {
+  height: calc(100vh - var(--navbar-height));
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center;
+}
+
+.hero video {
+  position: absolute;
+  height: calc(100vh - var(--navbar-height));
+  width: 100%;
+  object-fit: cover;
+}
+
+.preview {
+  text-align: center;
+
+  transition: 0.2s;
+  z-index: 1;
+}
+
+.preview span {
+  font-family: var(--font-preview);
+  font-size: 9vw;
+}

@@ -67,7 +67,7 @@
   background-color: red;
 }
 
-.dropdown > button:focus + ul {
+.active > button + ul {
   transform: translateY(0);
   opacity: 1;
   pointer-events: auto;
@@ -79,7 +79,7 @@ button > span {
   transition: transform ease-in-out 150ms;
 }
 
-button:focus > span {
+.active span {
   transform: rotate(180deg);
 }
 

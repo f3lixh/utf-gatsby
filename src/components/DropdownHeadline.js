@@ -1,5 +1,6 @@
 import * as React from "react";
 import {
+  active,
   container,
   dropdown,
   headline,
@@ -13,21 +14,28 @@ const DropdownHeadline = ({
   children,
   dropdownName,
 }) => {
-  /*  document.addEventListener("click", (e) => {
+  /* document.addEventListener("click", (e) => {
     const isDropdownButton = e.target.matches("[data-dropdown-button]");
-    if(!isDropdownButton && e.target.closest('[data-dropdown]') != null) return
+    if (!isDropdownButton && e.target.closest("[data-dropdown]") != null)
+      return;
 
-    let currentDropdown
-    if(isDropdownButton) {
-      currentDropdown = e.target.closest('[data-dropdown]')
-      currentDropdown.classList.toggle('active')
+    let currentDropdown;
+    if (isDropdownButton) {
+      currentDropdown = e.target.closest("[data-dropdown]");
+      currentDropdown.classList.toggle(active);
     }
 
-    document.querySelectorAll("[data-dropdown].acitve").forEach(dropdown => {
-      if(dropdown === currentDropdown) return
-      dropdown.classList.remove('active')
-    })
+    document.querySelectorAll("[data-dropdown].acitve").forEach((dropdown) => {
+      if (dropdown === currentDropdown) return;
+      dropdown.classList.remove(active);
+    });
   }); */
+
+  const toggleDropdown = () => {
+    document.querySelectorAll("[data-dropdown]").forEach((dropdown) => {
+      dropdown.classList.toggle(active);
+    });
+  };
 
   return (
     <div className={container}>
@@ -35,7 +43,7 @@ const DropdownHeadline = ({
         {<h1 style={{ color: color }}>{text}</h1>}
       </div>
       <div className={dropdown} data-dropdown>
-        <button>
+        <button data-dropdown-button onClick={toggleDropdown}>
           {dropdownName}
           <span>↓</span>
         </button>

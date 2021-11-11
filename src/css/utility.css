@@ -2,6 +2,7 @@
   --font-size-1: 16px;
   --font-family-std: "Teletext Type 1", "Courier New", monospace;
   --font-family-secondary: "Teletext Type 2", "Courier New", monospace;
+  --font-preview: "Secret Beta", "Bahnschrift", sans-serif;
   --cyan: #00ffff;
   --blue: #0000ff;
   --red: #ff0000;
@@ -44,6 +45,10 @@ h6 {
   font-weight: unset;
   font-size: unset;
   font-style: unset;
+}
+
+h1 {
+  font-size: 30px;
 }
 
 a {

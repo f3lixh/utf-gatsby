@@ -1,17 +1,36 @@
+/* React & Gatsby */
 import * as React from "react";
-
-import FontBlog from "../components/FontBlog";
 import { useState } from "react";
-import Layout from "../components/Layout";
+import { graphql, useStaticQuery } from "gatsby";
 
-import "../css/fonts.css";
-import JSONData from "../data/fonts.json";
-import { container } from "../css/modules/fontblog.module.css";
+/* Components */
+import FontBlog from "../components/FontBlog";
+import Layout from "../components/Layout";
 import DropdownHeadline from "../components/DropdownHeadline";
+
+/* CSS */
+import "../css/fonts.css";
+import { container } from "../css/modules/fontblog.module.css";
+import * as index from "../css/modules/index.module.css";
+import { active } from "../css/modules/dropdown-headline.module.css";
+
+/* Data */
+import JSONData from "../data/fonts.json";
 
 const IndexPage = () => {
   const [asc, setasc] = useState(true);
   const [fontList, setFontList] = useState(JSONData.fonts);
+  const videos = useStaticQuery(graphql`
+    query {
+      allFile(filter: { ext: { eq: ".mp4" } }) {
+        edges {
+          node {
+            publicURL
+          }
+        }
+      }
+    }
+  `);
 
   const sortByName = () => {
     if (asc) {
@@ -29,16 +48,43 @@ const IndexPage = () => {
     }
   };
 
+  function getRandomVideoURL() {
+    return videos.allFile.edges[
+      Math.floor(Math.random() * videos.allFile.edges.length)
+    ].node.publicURL;
+  }
+
+  document.querySelectorAll("ul.sortingDropDown > li").forEach((li) => {
+    li.addEventListener("click", (e) => {
+      document.querySelectorAll("[data-dropdown]").forEach((dropdown) => {
+        dropdown.classList.remove(active);
+      });
+    });
+  });
+
   return (
     <Layout pageTitle="Home of UTF" pageIndex="101">
+      <section className={index.hero}>
+        <video autoPlay muted loop playsInline>
+          <source src={getRandomVideoURL()} type="video/mp4" />
+        </video>
+        <div className={index.preview}>
+          <h1>UTF presents the</h1>
+          <span>
+            Secret <span>Font</span>
+          </span>
+        </div>
+      </section>
       <DropdownHeadline
         text="All the fonts"
         dropdownName="Sort by"
         color="white"
         background="black"
       >
-        <ul>
-          <li>Name (Ascending)</li>
+        <ul className="sortingDropDown">
+          <li onClick={sortByName} onKeyDown={sortByName}>
+            Name (Ascending)
+          </li>
           <li>Name (Descending)</li>
           <li>Index (Ascending)</li>
           <li>Index (Descending)</li>

@@ -10,7 +10,7 @@ const Projects = () => {
   );
   const data = useStaticQuery(graphql`
     query {
-      allFile {
+      allFile(filter: { ext: { eq: ".svg" } }) {
         edges {
           node {
             name
@@ -30,7 +30,7 @@ const Projects = () => {
     <Layout pageTitle="Projects" pageIndex="401">
       <section className={projects.container}>
         {JSONData.fonts.map((font) => {
-          if (font.isProject == true) {
+          if (font.isProject === true) {
             return (
               <article className={projects.item} key={font.fontIndex}>
                 <img src={getPublicURL(font.slug)} alt={font.name} />
