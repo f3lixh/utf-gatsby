@@ -1,7 +1,7 @@
 import * as React from "react";
-import Layout from "../components/Layout";
-import Headline from "../components/Headline";
 import FontIndexItem from "../components/FontIndexItem";
+import Headline from "../components/Headline";
+import Layout from "../components/Layout";
 
 import * as fontIndex from "../css/modules/font-index.module.css";
 
@@ -24,7 +24,9 @@ const FontIndex = () => {
       tempInitial = font.name.charAt(0).toUpperCase();
       return (
         <>
-          <h1 className={fontIndex.initial}>{font.name.charAt(0)}</h1>
+          <h1 key={font.fontIndex} className={fontIndex.initial}>
+            {font.name.charAt(0)}
+          </h1>
           <FontIndexItem data={font} key={font.fontIndex} />
         </>
       );

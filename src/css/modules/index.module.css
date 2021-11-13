@@ -22,6 +22,49 @@
 }
 
 .preview span {
+  font-weight: 100;
   font-family: var(--font-preview);
   font-size: 9vw;
+  animation: fontAxis 15s linear infinite;
+}
+
+@keyframes fontAxis {
+  0% {
+    font-weight: 100;
+    font-variation-settings: "wdth" 117;
+  }
+
+  12.5% {
+    font-weight: 900;
+  }
+  25% {
+    font-weight: 100;
+    font-variation-settings: "wdth" 70;
+  }
+
+  37.5% {
+    font-weight: 900;
+  }
+
+  50% {
+    font-variation-settings: "wdth" 117;
+    font-weight: 100;
+  }
+
+  62.5% {
+    font-variation-settings: "wdth" 70;
+  }
+
+  75% {
+    font-variation-settings: "wdth" 117;
+    font-weight: 900;
+  }
+
+  87.5% {
+    font-variation-settings: "wdth" 70;
+  }
+  100% {
+    font-variation-settings: "wdth" 117;
+    font-weight: 100;
+  }
 }

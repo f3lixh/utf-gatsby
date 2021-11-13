@@ -62,9 +62,8 @@ const IndexPage = () => {
         });
       });
     });
-  }
+  }init(); */
 
-  init(); */
   return (
     <Layout pageTitle="Home of UTF" pageIndex="101">
       <section className={index.hero}>
@@ -85,9 +84,7 @@ const IndexPage = () => {
         background="black"
       >
         <ul className="sortingDropDown">
-          <li onClick={sortByName} onKeyDown={sortByName}>
-            Name (Ascending)
-          </li>
+          <li onClick={sortByName}>Name (Ascending)</li>
           <li>Name (Descending)</li>
           <li>Index (Ascending)</li>
           <li>Index (Descending)</li>

@@ -1,7 +1,7 @@
 import * as React from "react";
 import { Link } from "gatsby";
 import * as fontIndex from "../css/modules/font-index.module.css";
-import "../css/utility.css";
+/* import "../css/utility.css"; */
 
 const FontIndexItem = ({ data }) => {
   return (

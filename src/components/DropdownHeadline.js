@@ -14,23 +14,6 @@ const DropdownHeadline = ({
   children,
   dropdownName,
 }) => {
-  /* document.addEventListener("click", (e) => {
-    const isDropdownButton = e.target.matches("[data-dropdown-button]");
-    if (!isDropdownButton && e.target.closest("[data-dropdown]") != null)
-      return;
-
-    let currentDropdown;
-    if (isDropdownButton) {
-      currentDropdown = e.target.closest("[data-dropdown]");
-      currentDropdown.classList.toggle(active);
-    }
-
-    document.querySelectorAll("[data-dropdown].acitve").forEach((dropdown) => {
-      if (dropdown === currentDropdown) return;
-      dropdown.classList.remove(active);
-    });
-  }); */
-
   const toggleDropdown = () => {
     document.querySelectorAll("[data-dropdown]").forEach((dropdown) => {
       dropdown.classList.toggle(active);
