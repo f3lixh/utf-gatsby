@@ -6,8 +6,6 @@ import { useState } from "react";
 
 // Step 2: Define your component
 const Custom = () => {
-  const [fontList, setFontList] = useState(JSONData.fonts);
-
   const data = useStaticQuery(graphql`
     query {
       allFile(filter: { ext: { eq: ".svg" } }) {
@@ -20,6 +18,7 @@ const Custom = () => {
       }
     }
   `);
+  const [fontList, setFontList] = useState(JSONData.fonts);
 
   function getPublicURL(fontName) {
     return data.allFile.edges.find((font) => {
@@ -36,6 +35,7 @@ const Custom = () => {
             <p>
               {font.name} {font.slug}
             </p>
+            <p>{getPublicURL(font.slug)}</p>
           </div>
         );
       })}
@@ -47,6 +47,7 @@ const Custom = () => {
             <p>
               {font.name} {font.slug}
             </p>
+            <p>{getPublicURL(font.slug)}</p>
           </div>
         );
       })}
