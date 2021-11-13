@@ -31,7 +31,7 @@ const IndexPage = () => {
     }
   `);
 
-  const sortByName = () => {
+  /* const sortByName = () => {
     console.log("sorted name");
 
     const sorted = [...fontList].sort((a, b) =>
@@ -49,7 +49,7 @@ const IndexPage = () => {
     );
 
     setFontList(sorted);
-  };
+  }; */
 
   function getRandomVideoURL() {
     return videos.allFile.edges[
