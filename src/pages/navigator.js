@@ -7,7 +7,7 @@ import JSONData from "../data/fonts.json";
 // Step 2: Define your component
 
 const Navigator = () => {
-  const [fontList, setFontList] = useState(JSONData.fonts);
+  /* const [fontList, setFontList] = useState(JSONData.fonts);
 
   const sortByName = () => {
     const sorted = [...fontList].sort((a, b) =>
@@ -29,7 +29,7 @@ const Navigator = () => {
       return new Date(b.date) - new Date(a.date);
     });
     setFontList(dateSorted);
-  };
+  }; */
 
   return (
     <Layout pageTitle="Navigator" pageIndex="501">
@@ -43,7 +43,7 @@ const Navigator = () => {
       <button onClick={showme}>6</button>
       <button onClick={showme}>7</button>
       <button onClick={showme}>8</button>
-      <button onClick={showme}>9</button> */}
+      <button onClick={showme}>9</button> 
       {fontList.map((font) => {
         return (
           <p key={font.fontIndex}>
@@ -53,7 +53,7 @@ const Navigator = () => {
       })}
       <button onClick={sortByName}>Name</button>
       <button onClick={sortbyIndex}>Sort Index</button>
-      <button onClick={sortbyDate}>Sort date</button>
+      <button onClick={sortbyDate}>Sort date</button> */}
     </Layout>
   );
 };

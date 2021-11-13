@@ -34,6 +34,9 @@ const Projects = () => {
             return (
               <article className={projects.item} key={font.fontIndex}>
                 <img src={getPublicURL(font.slug)} alt={font.name} />
+                <p>
+                  {font.name} {font.slug}
+                </p>
               </article>
             );
           } else {
