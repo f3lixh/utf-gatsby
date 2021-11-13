@@ -8,7 +8,7 @@ import * as fontIndex from "../css/modules/font-index.module.css";
 import JSONData from "../data/fonts.json";
 
 const FontIndex = () => {
-  const loadedFonts = JSONData.fonts;
+  const loadedFonts = [...JSONData.fonts];
   var tempInitial;
 
   loadedFonts.sort((a, b) =>
