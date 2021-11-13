@@ -18,7 +18,6 @@ import { active } from "../css/modules/dropdown-headline.module.css";
 import JSONData from "../data/fonts.json";
 
 const IndexPage = () => {
-  const [asc, setasc] = useState(true);
   const [fontList, setFontList] = useState(JSONData.fonts);
   const videos = useStaticQuery(graphql`
     query {
@@ -33,19 +32,23 @@ const IndexPage = () => {
   `);
 
   const sortByName = () => {
-    if (asc) {
-      const sorted = [...fontList].sort((a, b) =>
-        a.name.toUpperCase() > b.name.toUpperCase() ? 1 : -1
-      );
-      setasc(false);
-      setFontList(sorted);
-    } else if (!asc) {
-      const sorted = [...fontList].sort((a, b) =>
-        b.name.toUpperCase() > a.name.toUpperCase() ? 1 : -1
-      );
-      setasc(true);
-      setFontList(sorted);
-    }
+    console.log("sorted name");
+
+    const sorted = [...fontList].sort((a, b) =>
+      a.name.toUpperCase() > b.name.toUpperCase() ? 1 : -1
+    );
+
+    setFontList(sorted);
+  };
+
+  const sortByDate = () => {
+    console.log("sorted Date ");
+
+    const sorted = [...fontList].sort(
+      (a, b) => new Date(b.date) - new Date(a.date)
+    );
+
+    setFontList(sorted);
   };
 
   function getRandomVideoURL() {
@@ -53,16 +56,6 @@ const IndexPage = () => {
       Math.floor(Math.random() * videos.allFile.edges.length)
     ].node.publicURL;
   }
-
-  /*  function init() {
-    document.querySelectorAll("ul.sortingDropDown > li").forEach((li) => {
-      li.addEventListener("click", (e) => {
-        document.querySelectorAll("[data-dropdown]").forEach((dropdown) => {
-          dropdown.classList.remove(active);
-        });
-      });
-    });
-  }init(); */
 
   return (
     <Layout pageTitle="Home of UTF" pageIndex="101">
@@ -88,7 +81,7 @@ const IndexPage = () => {
           <li>Name (Descending)</li>
           <li>Index (Ascending)</li>
           <li>Index (Descending)</li>
-          <li>Release Date</li>
+          <li onClick={sortByDate}>Release Date</li>
         </ul>
       </DropdownHeadline>
       <section className={container}>
