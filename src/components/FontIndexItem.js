@@ -6,7 +6,6 @@ import * as fontIndex from "../css/modules/font-index.module.css";
 const FontIndexItem = ({ data }) => {
   return (
     <Link
-      loading="lazy"
       key={data.fontIndex}
       to={`/fonts/${data.slug}`}
       className={fontIndex.item}

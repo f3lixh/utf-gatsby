@@ -6,7 +6,7 @@ import "../css/utility.css";
 const FontBlog = ({ fontData }) => {
   const data = useStaticQuery(graphql`
     query {
-      allFile(filter: { ext: { eq: ".svg" } }) {
+      allFile {
         edges {
           node {
             name
