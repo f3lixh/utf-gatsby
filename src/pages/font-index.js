@@ -8,15 +8,16 @@ import * as fontIndex from "../css/modules/font-index.module.css";
 import JSONData from "../data/fonts.json";
 
 const FontIndex = () => {
+  const loadedFonts = JSONData.fonts;
   var tempInitial;
 
-  JSONData.fonts.sort((a, b) =>
+  loadedFonts.sort((a, b) =>
     a.name.toUpperCase() > b.name.toUpperCase() ? 1 : -1
   );
 
-  const half = Math.ceil(JSONData.fonts.length / 2);
-  var firstAreaFonts = JSONData.fonts.slice(0, half);
-  var secondAreaFonts = JSONData.fonts.slice(half);
+  const half = Math.ceil(loadedFonts.length / 2);
+  var firstAreaFonts = loadedFonts.slice(0, half);
+  var secondAreaFonts = loadedFonts.slice(half);
   sortFonts();
 
   function buildme(font) {
