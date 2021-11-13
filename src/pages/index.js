@@ -77,11 +77,11 @@ const IndexPage = () => {
         background="black"
       >
         <ul className="sortingDropDown">
-          <li onClick={sortByName}>Name (Ascending)</li>
+          {/*  <li onClick={sortByName}>Name (Ascending)</li> */}
           <li>Name (Descending)</li>
           <li>Index (Ascending)</li>
           <li>Index (Descending)</li>
-          <li onClick={sortByDate}>Release Date</li>
+          {/*  <li onClick={sortByDate}>Release Date</li> */}
         </ul>
       </DropdownHeadline>
       <section className={container}>
