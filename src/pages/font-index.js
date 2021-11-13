@@ -10,6 +10,10 @@ import JSONData from "../data/fonts.json";
 const FontIndex = () => {
   var tempInitial;
 
+  JSONData.fonts.sort((a, b) =>
+    a.name.toUpperCase() > b.name.toUpperCase() ? 1 : -1
+  );
+
   const half = Math.ceil(JSONData.fonts.length / 2);
   var firstAreaFonts = JSONData.fonts.slice(0, half);
   var secondAreaFonts = JSONData.fonts.slice(half);
