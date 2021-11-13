@@ -58,7 +58,7 @@ const IndexPage = () => {
   }
 
   return (
-    <Layout pageTitle="Home of UTF" pageIndex="101">
+    <Layout pageTitle="Home of UTF" pageIndex="201">
       <section className={index.hero}>
         <video autoPlay muted loop playsInline>
           <source src={getRandomVideoURL()} type="video/mp4" />
