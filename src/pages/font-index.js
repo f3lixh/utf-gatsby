@@ -10,14 +10,9 @@ import JSONData from "../data/fonts.json";
 const FontIndex = () => {
   var tempInitial;
 
-  JSONData.fonts.sort((a, b) =>
-    a.name.toUpperCase() > b.name.toUpperCase() ? 1 : -1
-  );
-
   const half = Math.ceil(JSONData.fonts.length / 2);
   var firstAreaFonts = JSONData.fonts.slice(0, half);
   var secondAreaFonts = JSONData.fonts.slice(half);
-  sortFonts();
 
   function buildme(font) {
     if (tempInitial !== font.name.charAt(0).toUpperCase()) {
@@ -36,17 +31,6 @@ const FontIndex = () => {
           <FontIndexItem data={font} key={font.fontIndex} />
         </>
       );
-    }
-  }
-
-  function sortFonts() {
-    if (
-      firstAreaFonts[firstAreaFonts.length - 1].name.charAt(0).toUpperCase() ===
-      secondAreaFonts[0].name.charAt(0).toUpperCase()
-    ) {
-      firstAreaFonts.push(secondAreaFonts[0]);
-      secondAreaFonts.shift();
-      sortFonts();
     }
   }
 

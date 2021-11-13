@@ -31,26 +31,6 @@ const IndexPage = () => {
     }
   `);
 
-  /* const sortByName = () => {
-    console.log("sorted name");
-
-    const sorted = [...fontList].sort((a, b) =>
-      a.name.toUpperCase() > b.name.toUpperCase() ? 1 : -1
-    );
-
-    setFontList(sorted);
-  };
-
-  const sortByDate = () => {
-    console.log("sorted Date ");
-
-    const sorted = [...fontList].sort(
-      (a, b) => new Date(b.date) - new Date(a.date)
-    );
-
-    setFontList(sorted);
-  }; */
-
   function getRandomVideoURL() {
     return videos.allFile.edges[
       Math.floor(Math.random() * videos.allFile.edges.length)
@@ -77,11 +57,9 @@ const IndexPage = () => {
         background="black"
       >
         <ul className="sortingDropDown">
-          {/*  <li onClick={sortByName}>Name (Ascending)</li> */}
           <li>Name (Descending)</li>
           <li>Index (Ascending)</li>
           <li>Index (Descending)</li>
-          {/*  <li onClick={sortByDate}>Release Date</li> */}
         </ul>
       </DropdownHeadline>
       <section className={container}>

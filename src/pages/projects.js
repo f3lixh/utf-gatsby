@@ -5,9 +5,6 @@ import * as projects from "../css/modules/projects.module.css";
 import JSONData from "../data/fonts.json";
 
 const Projects = () => {
-  JSONData.fonts.sort((a, b) =>
-    a.name > b.name ? 1 : b.name > a.name ? -1 : 0
-  );
   const data = useStaticQuery(graphql`
     query {
       allFile(filter: { ext: { eq: ".svg" } }) {
