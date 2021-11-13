@@ -28,6 +28,13 @@
   animation: fontAxis 15s linear infinite;
 }
 
+@media (max-width: 1200px) {
+  .preview span::before {
+    content: "\a";
+    white-space: pre;
+  }
+}
+
 @keyframes fontAxis {
   0% {
     font-weight: 100;
