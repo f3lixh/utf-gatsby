@@ -1,0 +1,9 @@
+/* Webfont: Fractured-Dirty */@font-face {
+    font-family: 'Fractured';
+    src: url('Fractured-Dirty.woff2') format('woff2'), /* Modern Browsers */
+         url('Fractured-Dirty.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

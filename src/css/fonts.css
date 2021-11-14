@@ -18,3 +18,11 @@
   font-style: normal;
   src: url("../fonts/Odiosis/Secret-VF.ttf") format("woff2");
 }
+
+@font-face {
+  font-family: "Fractured Italic";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/FracturedItalic/FracturedItalic-Regular.woff2")
+    format("woff2");
+}

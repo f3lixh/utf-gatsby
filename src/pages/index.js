@@ -44,7 +44,7 @@ const IndexPage = () => {
           <source src={getRandomVideoURL()} type="video/mp4" />
         </video>
         <div className={index.preview}>
-          <h1>UTF presents the</h1>
+          <h1>Soon:</h1>
           <span>
             Secret <span>Font</span>
           </span>

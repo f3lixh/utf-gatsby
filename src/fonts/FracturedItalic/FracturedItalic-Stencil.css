@@ -1,0 +1,9 @@
+/* Webfont: FracturedItalic-Stencil */@font-face {
+    font-family: 'FracturedItalic';
+    src: url('FracturedItalic-Stencil.woff2') format('woff2'), /* Modern Browsers */
+         url('FracturedItalic-Stencil.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: italic;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+

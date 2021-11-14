@@ -29,9 +29,15 @@
 }
 
 @media (max-width: 1200px) {
-  .preview span::before {
+  .preview h1 {
+    font-size: 20px;
+  }
+  .preview span span::before {
     content: "\a";
     white-space: pre;
+  }
+  .preview span {
+    font-size: 15vw;
   }
 }
 
