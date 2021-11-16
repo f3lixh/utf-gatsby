@@ -2,6 +2,7 @@ module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
     title: "unofficial type foundry",
+    siteLanguage: `en`,
   },
   plugins: [
     "gatsby-plugin-image",

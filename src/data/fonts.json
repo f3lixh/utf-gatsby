@@ -8,7 +8,25 @@
       "isVariable": true,
       "isProject": false,
       "characters": 506,
-      "styles": 18,
+      "axes": [
+        {
+          "name": "Weight",
+          "axis": "wght",
+          "code": "wt",
+          "minValue": 100,
+          "maxVaule": 900,
+          "step": 100
+        },
+        {
+          "name": "Slant",
+          "axis": "slnt",
+          "code": "sl",
+          "minValue": 0,
+          "maxVaule": 14,
+          "step": 1
+        }
+      ],
+      "styles": [],
       "features": [
         "frac",
         "ss01",
@@ -34,7 +52,10 @@
       "isVariable": false,
       "isProject": false,
       "characters": 493,
-      "styles": 2,
+      "styles": [
+        "Regular",
+        "Grunge"
+      ],
       "features": [
         "frac",
         "liga",
@@ -58,7 +79,7 @@
       "isProject": false,
       "isVariable": false,
       "characters": 309,
-      "styles": 1,
+      "styles": [],
       "features": [
         "frac",
         "sups",
@@ -82,7 +103,7 @@
       "isProject": false,
       "isVariable": false,
       "characters": 413,
-      "styles": 2,
+      "styles": [],
       "features": [
         "frac",
         "liga",
@@ -114,7 +135,7 @@
       "isProject": false,
       "isVariable": false,
       "characters": 336,
-      "styles": 5,
+      "styles": [],
       "features": [
         "frac",
         "ss01",
@@ -137,7 +158,7 @@
       "isProject": false,
       "isVariable": false,
       "characters": 173,
-      "styles": 1,
+      "styles": [],
       "features": [],
       "date": "2020-07-06T00:00:00.000Z",
       "tags": [
@@ -156,7 +177,7 @@
       "isProject": false,
       "isVariable": false,
       "characters": 575,
-      "styles": 1,
+      "styles": [],
       "features": [
         "frac",
         "liga",
@@ -192,7 +213,7 @@
       "isProject": false,
       "isVariable": true,
       "characters": 540,
-      "styles": 2,
+      "styles": [],
       "features": [
         "liga"
       ],
@@ -212,7 +233,7 @@
       "isProject": false,
       "isVariable": false,
       "characters": 239,
-      "styles": 3,
+      "styles": [],
       "features": [],
       "date": "2020-08-06T00:00:00.000Z",
       "tags": [
@@ -232,7 +253,7 @@
       "isProject": false,
       "isVariable": false,
       "characters": 250,
-      "styles": 1,
+      "styles": [],
       "features": [],
       "date": "2020-07-05T00:00:00.000Z",
       "tags": [
@@ -250,7 +271,7 @@
       "isProject": false,
       "isVariable": false,
       "characters": 293,
-      "styles": 2,
+      "styles": [],
       "features": [
         "liga",
         "frac"
@@ -271,7 +292,7 @@
       "isProject": false,
       "isVariable": false,
       "characters": 471,
-      "styles": 4,
+      "styles": [],
       "features": [],
       "date": "2019-09-02T00:00:00.000Z",
       "tags": [
@@ -289,7 +310,7 @@
       "isProject": false,
       "isVariable": false,
       "characters": 361,
-      "styles": 4,
+      "styles": [],
       "features": [
         "frac"
       ],
@@ -309,7 +330,7 @@
       "isProject": true,
       "isVariable": false,
       "characters": 121,
-      "styles": 1,
+      "styles": [],
       "date": "2020-05-31T00:00:00.000Z",
       "tags": [
         "headline",
@@ -326,7 +347,7 @@
       "isProject": true,
       "isVariable": false,
       "characters": 121,
-      "styles": 1,
+      "styles": [],
       "date": "2020-05-31T00:00:00.000Z",
       "tags": [
         "headline",
@@ -343,7 +364,7 @@
       "isProject": true,
       "isVariable": false,
       "characters": 79,
-      "styles": 1,
+      "styles": [],
       "date": "2021-12-31T00:00:00.000Z",
       "tags": [
         "headline",
@@ -362,7 +383,7 @@
       "isProject": true,
       "isVariable": false,
       "characters": 94,
-      "styles": 1,
+      "styles": [],
       "date": "2021-12-31T00:00:00.000Z",
       "tags": [
         "headline",
@@ -382,7 +403,7 @@
       "features": [
         "frac"
       ],
-      "styles": 3,
+      "styles": [],
       "date": "2021-12-31T00:00:00.000Z",
       "tags": [
         "headline",
@@ -400,7 +421,7 @@
       "isProject": true,
       "isVariable": false,
       "characters": 77,
-      "styles": 1,
+      "styles": [],
       "date": "2021-12-31T00:00:00.000Z",
       "tags": [
         "headline",
@@ -417,7 +438,7 @@
       "isProject": true,
       "isVariable": false,
       "characters": 507,
-      "styles": 18,
+      "styles": [],
       "date": "2021-12-31T00:00:00.000Z",
       "tags": [
         "headline",
@@ -434,7 +455,7 @@
       "isProject": true,
       "isVariable": false,
       "characters": 508,
-      "styles": 2,
+      "styles": [],
       "date": "2021-12-31T00:00:00.000Z",
       "tags": [
         "headline",
@@ -451,7 +472,7 @@
       "isProject": true,
       "isVariable": true,
       "characters": 575,
-      "styles": 4,
+      "styles": [],
       "date": "2021-12-31T00:00:00.000Z",
       "tags": [
         "headline",

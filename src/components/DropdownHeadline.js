@@ -1,4 +1,5 @@
 import * as React from "react";
+import { useState } from "react";
 import {
   active,
   container,
@@ -14,10 +15,11 @@ const DropdownHeadline = ({
   children,
   dropdownName,
 }) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   const toggleDropdown = () => {
-    document.querySelectorAll("[data-dropdown]").forEach((dropdown) => {
-      dropdown.classList.toggle(active);
-    });
+    setIsOpen(!isOpen);
+    console.log("hello from useState!");
   };
 
   return (
@@ -25,8 +27,8 @@ const DropdownHeadline = ({
       <div className={headline} style={{ backgroundColor: background }}>
         {<h1 style={{ color: color }}>{text}</h1>}
       </div>
-      <div className={dropdown} data-dropdown>
-        <button data-dropdown-button onClick={toggleDropdown}>
+      <div className={`${dropdown} ${isOpen ? active : ""}`} data-lol>
+        <button onClick={toggleDropdown}>
           {dropdownName}
           <span>↓</span>
         </button>

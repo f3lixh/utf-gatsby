@@ -13,7 +13,7 @@ const Fractured = () => {
           <span>&#57359;</span>
           <span>&#57396;</span>
           <span>A</span>
-          <span>C</span>
+          <span>&#57433;</span>
           <span>T</span>
           <span>&#57411;</span>
           <span>R</span>

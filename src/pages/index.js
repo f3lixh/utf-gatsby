@@ -18,7 +18,10 @@ import { active } from "../css/modules/dropdown-headline.module.css";
 import JSONData from "../data/fonts.json";
 
 const IndexPage = () => {
-  const [fontList, setFontList] = useState(JSONData.fonts);
+  const [fontList, setFontList] = useState(() => {
+    return JSONData.fonts;
+  });
+
   const videos = useStaticQuery(graphql`
     query {
       allFile(filter: { ext: { eq: ".mp4" } }) {
@@ -31,14 +34,31 @@ const IndexPage = () => {
     }
   `);
 
-  function getRandomVideoURL() {
+  const getRandomVideoURL = () => {
     return videos.allFile.edges[
       Math.floor(Math.random() * videos.allFile.edges.length)
     ].node.publicURL;
-  }
+  };
+
+  const sortBlogSection = (target) => () => {
+    switch (target) {
+      case "nameDESC":
+        console.log("fail");
+        const sorted = [...fontList].sort((a, b) =>
+          a.name.toUpperCase() > b.name.toUpperCase() ? 1 : -1
+        );
+        setFontList(sorted);
+        document
+          .querySelectorAll("[data-lol]")
+          .forEach((e) => e.classList.toggle(active));
+        break;
+      default:
+        console.log("fail");
+    }
+  };
 
   return (
-    <Layout pageTitle="Home of UTF" pageIndex="201">
+    <Layout pageTitle="unofficial type foundry" pageIndex="101">
       <section className={index.hero}>
         <video autoPlay muted loop playsInline>
           <source src={getRandomVideoURL()} type="video/mp4" />
@@ -57,7 +77,9 @@ const IndexPage = () => {
         background="black"
       >
         <ul className="sortingDropDown">
-          <li>Name (Descending)</li>
+          <li onClick={sortBlogSection("nameDESC")} key={Math.random()}>
+            Name (Descending)
+          </li>
           <li>Index (Ascending)</li>
           <li>Index (Descending)</li>
         </ul>
@@ -67,7 +89,7 @@ const IndexPage = () => {
           if (font.isProject === false) {
             return <FontBlog fontData={font} key={font.fontIndex} />;
           } else {
-            return "";
+            return null;
           }
         })}
       </section>
