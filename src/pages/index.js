@@ -40,20 +40,50 @@ const IndexPage = () => {
     ].node.publicURL;
   };
 
-  const sortBlogSection = (target) => () => {
-    switch (target) {
-      case "nameDESC":
-        console.log("fail");
-        const sorted = [...fontList].sort((a, b) =>
+  const toggleDropdown = () => {
+    document
+      .querySelectorAll("[data-lol]")
+      .forEach((e) => e.classList.toggle(active));
+  };
+
+  const sortBlogSection = (sortVaule) => () => {
+    switch (sortVaule) {
+      case "nameASC":
+        const sortedDESC = [...fontList].sort((a, b) =>
           a.name.toUpperCase() > b.name.toUpperCase() ? 1 : -1
         );
-        setFontList(sorted);
-        document
-          .querySelectorAll("[data-lol]")
-          .forEach((e) => e.classList.toggle(active));
+        toggleDropdown();
+        setFontList(sortedDESC);
+        break;
+
+      case "nameDESC":
+        const sortedASC = [...fontList].sort((a, b) =>
+          b.name.toUpperCase().localeCompare(a.name.toUpperCase())
+        );
+        setFontList(sortedASC);
+        toggleDropdown();
+        break;
+
+      case "dateNew":
+        const sortedDateNew = [...fontList].sort((a, b) => {
+          return new Date(b.date) - new Date(a.date);
+        });
+        setFontList(sortedDateNew);
+        toggleDropdown();
+        break;
+      case "dateOld":
+        const sortedDateOld = [...fontList].sort((a, b) => {
+          return new Date(a.date) - new Date(b.date);
+        });
+        setFontList(sortedDateOld);
+        toggleDropdown();
+        break;
+      case "default":
+        setFontList([...JSONData.fonts]);
+        toggleDropdown();
         break;
       default:
-        console.log("fail");
+        console.log("Failed to sort fonts or update state");
     }
   };
 
@@ -77,11 +107,21 @@ const IndexPage = () => {
         background="black"
       >
         <ul className="sortingDropDown">
+          <li onClick={sortBlogSection("nameASC")} key={Math.random()}>
+            Name (Ascending)
+          </li>
           <li onClick={sortBlogSection("nameDESC")} key={Math.random()}>
             Name (Descending)
           </li>
-          <li>Index (Ascending)</li>
-          <li>Index (Descending)</li>
+          <li onClick={sortBlogSection("dateNew")} key={Math.random()}>
+            Date (newest)
+          </li>
+          <li onClick={sortBlogSection("dateOld")} key={Math.random()}>
+            Date (oldest)
+          </li>
+          <li onClick={sortBlogSection("default")} key={Math.random()}>
+            Default
+          </li>
         </ul>
       </DropdownHeadline>
       <section className={container}>

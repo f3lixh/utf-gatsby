@@ -1,8 +1,8 @@
 import * as React from "react";
 import Layout from "../components/Layout";
-import { useState } from "react";
+/* import { useState } from "react"; */
 import "../css/modules/navigator.module.css";
-import JSONData from "../data/fonts.json";
+/* import JSONData from "../data/fonts.json"; */
 
 const Navigator = () => {
   return <Layout pageTitle="Navigator" pageIndex="501"></Layout>;

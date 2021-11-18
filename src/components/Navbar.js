@@ -13,7 +13,7 @@ const Navbar = ({ pageIndex }) => {
   };
 
   return (
-    <nav className={nav.container}>
+    <nav className={nav.container} role="navigation">
       <div className={nav.logo}>
         <Link to="/">UTF/{pageIndex}</Link>
       </div>
@@ -39,7 +39,12 @@ const Navbar = ({ pageIndex }) => {
           {new Date().toLocaleTimeString()}
         </li>
       </ul>
-      <div className={nav.button} onClick={toggleMe}></div>
+      <div
+        className={nav.button}
+        onClick={toggleMe}
+        role="menubar"
+        focusable="true"
+      ></div>
     </nav>
   );
 };

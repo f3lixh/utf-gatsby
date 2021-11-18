@@ -1,26 +1,17 @@
 import * as React from "react";
 import Layout from "../../components/Layout";
-import { container, header } from "../../css/modules/fontpage.module.css";
-
+/* import { header } from "../../css/modules/fontpage.module.css"; */
+import styled from "styled-components";
+import FontHero from "../../components/FontPages/FontHero";
+import FontCharacterMap from "../../components/FontPages/FontCharacterMap";
+const featuredFont = "Fractured";
 const Fractured = () => {
-  const displayFont = {
-    fontFamily: "Fractured",
-  };
   return (
     <Layout pageTitle="Fractured" pageIndex="295">
-      <div className={header}>
-        <div>
-          <span>&#57359;</span>
-          <span>&#57396;</span>
-          <span>A</span>
-          <span>&#57433;</span>
-          <span>T</span>
-          <span>&#57411;</span>
-          <span>R</span>
-          <span>&#57356;</span>
-          <span>D</span>
-        </div>
-      </div>
+      <FontHero font={featuredFont}>
+        &#57359;&#57396;A&#57433;T&#57411;R&#57356;D
+      </FontHero>
+      <FontCharacterMap font={featuredFont}></FontCharacterMap>
     </Layout>
   );
 };
