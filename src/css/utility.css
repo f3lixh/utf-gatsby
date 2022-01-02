@@ -78,7 +78,7 @@ a {
 .dotted span:last-child {
   padding-left: 22px;
 }
-
+/* 
 @media only screen and (max-width: 1045px) {
   html,
   body {
@@ -87,3 +87,4 @@ a {
     overflow-y: unset !important;
   }
 }
+ */

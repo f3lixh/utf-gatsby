@@ -113,6 +113,7 @@
     background-color: black;
     transform: translateX(100%);
     transition: transform ease-in-out 0.5s;
+    overflow-x: hidden;
   }
 
   .container ul li a {
