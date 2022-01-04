@@ -53,6 +53,35 @@ const Footer = () => {
           <span>704</span>
         </Link>
       </div>
+      <div className={footer.bottom}>
+        <div className={footer.links}>
+          <a
+            className={footer.twitter}
+            href="https://twitter.com/hubfex"
+            target="_blank"
+            aria-label="Twitter"
+          ></a>
+          <a
+            className={footer.instagram}
+            href="https://twitter.com/hubfex"
+            target="_blank"
+            aria-label="Twitter"
+          ></a>
+          <a
+            className={footer.behance}
+            href="https://twitter.com/hubfex"
+            target="_blank"
+            aria-label="Twitter"
+          ></a>
+          <a
+            className={footer.dribble}
+            href="https://twitter.com/hubfex"
+            target="_blank"
+            aria-label="Twitter"
+          ></a>
+        </div>
+        <div>Copyright &copy; {new Date().getFullYear()}</div>
+      </div>
     </footer>
   );
 };

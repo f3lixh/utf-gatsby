@@ -3,8 +3,10 @@
 }
 
 .navigation {
+  padding: 40px 10px;
   display: grid;
-  gap: 20px;
+  row-gap: 15px;
+  column-gap: 30px;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
   grid-auto-flow: column;
@@ -12,9 +14,11 @@
 
 .navigation a {
   display: flex;
+  position: relative;
   justify-content: space-between;
   align-items: center;
   background-position-y: 4px;
+
   height: 35px;
   background-image: url("../../images/util/dot.svg");
   background-repeat: repeat-x;
@@ -30,6 +34,64 @@
 
 .navigation a span:last-child {
   padding-left: 20px;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.bottom > div {
+  padding-bottom: 30px;
+}
+
+.links {
+  display: flex;
+}
+
+.links > a {
+  margin: 0px 10px;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 24px;
+  width: 24px;
+}
+
+.twitter {
+  background-image: url("../../images/icons/twitter.svg");
+}
+
+.behance {
+  background-image: url("../../images/icons/behance.svg");
+}
+
+.instagram {
+  background-image: url("../../images/icons/instagram.svg");
+}
+
+.dribble {
+  background-image: url("../../images/icons/dribbble.svg");
+}
+
+.navigation a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  background-color: blue;
+
+  transform: scale(0, 1);
+  transform-origin: 0% 100%;
+  transition: transform 0.3s ease;
+}
+
+.navigation a:hover::after {
+  transform: scale(1, 1);
 }
 
 @media (max-width: 1200px) {
