@@ -3,12 +3,28 @@ import Footer from "./Footer";
 import Navbar from "./Navbar";
 import "normalize.css";
 
-const Layout = ({ children, pageTitle, pageIndex }) => {
+const Layout = ({
+  children,
+  pageTitle,
+  pageIndex,
+  indexColor,
+  itemColor,
+  dateColor,
+  timeColor,
+  navbarColor,
+}) => {
   return (
     <>
-      <Navbar pageIndex={pageIndex}></Navbar>
+      <Navbar
+        pageIndex={pageIndex}
+        indexColor={indexColor}
+        itemColor={itemColor}
+        dateColor={dateColor}
+        timeColor={timeColor}
+        navbarColor={navbarColor}
+      ></Navbar>
       <title>{pageTitle}</title>
-      {children}
+      <main>{children}</main>
       <Footer></Footer>
     </>
   );

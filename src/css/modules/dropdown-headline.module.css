@@ -42,7 +42,7 @@
   padding: 20px;
   font-family: var(--font-family-std);
   width: 100%;
-  border-radius: 0;
+  border-radius: 4px;
 }
 
 .dropdown ul {

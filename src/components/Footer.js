@@ -14,7 +14,7 @@ const Footer = () => {
           <span>Navigator</span>
           <span>103</span>
         </Link>
-        <Link to="/fonts/index">
+        <Link to="/fonts">
           <span>Fonts</span>
           <span>201</span>
         </Link>

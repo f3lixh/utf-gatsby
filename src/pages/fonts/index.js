@@ -3,7 +3,7 @@ import Layout from "../../components/Layout";
 
 const Fonts = () => {
   return (
-    <Layout>
+    <Layout pageIndex={201} pageTitle="Fonts">
       <h1>Here are all my Fonts!</h1>
     </Layout>
   );

@@ -11,6 +11,7 @@
   --pink: #ff00ff;
   --white: #fff;
   --black: #000;
+  --side-padding: 0px 10px;
 }
 
 html,
@@ -56,6 +57,10 @@ a {
   color: inherit;
 }
 
+main {
+  margin-top: var(--navbar-height);
+}
+
 .dotted {
   display: flex;
   background-position-y: 4px;
@@ -65,6 +70,10 @@ a {
   justify-content: space-between;
   background-image: url("../images/util/dot.svg");
   background-repeat: repeat-x;
+}
+
+.text-blue {
+  color: blue;
 }
 
 .dotted span {
@@ -78,6 +87,7 @@ a {
 .dotted span:last-child {
   padding-left: 22px;
 }
+
 /* 
 @media only screen and (max-width: 1045px) {
   html,

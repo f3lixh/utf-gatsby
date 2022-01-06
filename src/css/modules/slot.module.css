@@ -1,0 +1,13 @@
+.canvas {
+  height: calc(100vh - var(--navbar-height));
+  width: 100vw;
+  background-color: blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 100px;
+}
+
+.canvas > div {
+  padding: 40px;
+}
