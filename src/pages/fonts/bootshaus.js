@@ -1,12 +1,14 @@
 import * as React from "react";
+import { useState, useRef, useEffect } from "react";
 import Layout from "../../components/Layout";
 /* import { header } from "../../css/modules/fontpage.module.css"; */
 /* import styled from "styled-components";
 import FontHero from "../../components/FontPages/FontHero";
 import FontCharacterMap from "../../components/FontPages/FontCharacterMap"; */
 import styled from "styled-components";
+import FadeInSection from "../../components/FadeInSection";
 
-const Wrapper = styled.main`
+const Wrapper = styled.section`
   font-family: "Bootshaus";
   height: calc(100vh - var(--navbar-height));
   background-color: blue;
@@ -16,10 +18,6 @@ const Wrapper = styled.main`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @media (max-width: 1200px) {
-    color: red;
-  }
 `;
 
 const Bootshaus = () => {
@@ -33,9 +31,11 @@ const Bootshaus = () => {
       itemColor={"white"}
       indexColor={"yellow"}
     >
-      <Wrapper>
-        <p>Bootshaus</p>
-      </Wrapper>
+      <FadeInSection>
+        <Wrapper>
+          <p>Bootshaus</p>
+        </Wrapper>
+      </FadeInSection>
     </Layout>
   );
 };

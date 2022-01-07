@@ -11,10 +11,6 @@ const Wrapper = styled.section`
   display: flex;
   justify-content: center;
   align-items: center;
-
-  @media (max-width: 1200px) {
-    color: red;
-  }
 `;
 
 const FontHero = ({ children, font }) => {
