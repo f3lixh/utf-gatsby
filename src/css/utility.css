@@ -1,5 +1,5 @@
 :root {
-  --font-size-1: 16px;
+  --font-size-1: 14px;
   --font-family-std: "Teletext Type 1", "Courier New", monospace;
   --font-family-secondary: "Teletext Type 2", "Courier New", monospace;
   --font-preview: "Secret Beta", "Bahnschrift", sans-serif;
@@ -49,7 +49,15 @@ h6 {
 }
 
 h1 {
-  font-size: 30px;
+  font-size: 2.4rem !important;
+}
+
+h2 {
+  font-size: 2rem !important;
+}
+
+h3 {
+  font-size: 1.7rem !important;
 }
 
 a {
@@ -74,6 +82,10 @@ main {
 
 .text-blue {
   color: blue;
+}
+
+.blue {
+  background-color: blue;
 }
 
 .dotted span {
@@ -114,4 +126,28 @@ main {
 
 .red {
   background-color: red;
+}
+
+[contenteditable] {
+  outline: 0px solid transparent;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--black);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--white);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--red);
 }

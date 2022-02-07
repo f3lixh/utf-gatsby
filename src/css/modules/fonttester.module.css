@@ -1,0 +1,31 @@
+.container:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.container:hover .functions {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.functions {
+  opacity: 0;
+  padding: 20px 0px;
+}
+
+.name {
+  opacity: 1 !important;
+}
+
+.name::before {
+  content: "·";
+  letter-spacing: 5px;
+  color: red;
+}
+
+.testfield {
+  font-size: 7rem;
+  white-space: nowrap;
+}
+
+@media (min-width: 768px) {
+}

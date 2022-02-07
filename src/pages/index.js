@@ -7,6 +7,7 @@ import { graphql, useStaticQuery } from "gatsby";
 import FontBlog from "../components/FontBlog";
 import Layout from "../components/Layout";
 import DropdownHeadline from "../components/DropdownHeadline";
+import FadeInSection from "../components/FadeInSection";
 
 /* CSS */
 import "../css/fonts.css";
@@ -87,6 +88,8 @@ const IndexPage = () => {
     }
   };
 
+  console.log("render");
+
   return (
     <Layout pageTitle="unofficial type foundry" pageIndex="101">
       <section className={index.hero}>
@@ -124,6 +127,7 @@ const IndexPage = () => {
           </li>
         </ul>
       </DropdownHeadline>
+
       <section className={container}>
         {fontList.map((font) => {
           if (font.isProject === false) {

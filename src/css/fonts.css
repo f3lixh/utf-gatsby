@@ -1,3 +1,5 @@
+/* Page Default Fonts */
+
 @font-face {
   font-family: "Teletext Type 1";
   font-weight: 400;
@@ -12,11 +14,41 @@
   src: url("../fonts/TeletextType2/TeleTextType2-Regular.woff2") format("woff2");
 }
 
+/* Portfolio Fonts */
+
 @font-face {
-  font-family: "Secret Beta";
+  font-family: "Apex";
   font-weight: 100 900;
   font-style: normal;
-  src: url("../fonts/Odiosis/Secret-VF.ttf") format("woff2");
+  src: url("../fonts/ApexVar/ApexVariable.ttf") format("ttf");
+}
+
+@font-face {
+  font-family: "Benny";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Benny/Benny-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Bootshaus";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Bootshaus/Bootshaus-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Candybox";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Candybox/Candybox-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Declasse";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Declasse/Declasse-Regular.woff2") format("woff2");
 }
 
 @font-face {
@@ -28,15 +60,96 @@
 }
 
 @font-face {
-  font-family: "Benny";
+  font-family: "Frontier Pursuits";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/FrontierPursuits/FrontierPursuits-Regular.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Frontier Pursuits Grunge";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/FrontierPursuits/FrontierPursuits-Grunge.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Gouranga Line";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Gouranga/Gouranga-Line.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gouranga Outline";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Gouranga/Gouranga-Outline.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gouranga Shadow";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Gouranga/Gouranga-Shadow.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gouranga Pixel";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Gouranga/Gouranga-Pixel.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "invetero";
   font-weight: 400;
   font-style: normal;
   src: url("../fonts/invetero/invetero-Regular.woff2") format("woff2");
 }
 
 @font-face {
-  font-family: "Bootshaus";
+  font-family: "New Austin";
   font-weight: 400;
   font-style: normal;
-  src: url("../fonts/Bootshaus/Bootshaus-Regular.woff2") format("woff2");
+  src: url("../fonts/NewAustin/New-Austin-Grunge.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Rock Radio";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/CaptainLoggins/Captain-Loggins-Regular.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Rock Radio Rocks";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/CaptainLoggins/Captain-Loggins-Rocks.woff2")
+    format("woff2");
+}
+
+@font-face {
+  font-family: "Streetnames";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Streetnames/Streets.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Secret Beta";
+  font-weight: 100 900;
+  font-style: normal;
+  src: url("../fonts/Odiosis/Secret-VF.ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "Übermacht";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Ubermacht/Ubermacht-Regular.woff2") format("woff2");
 }

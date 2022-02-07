@@ -2,6 +2,7 @@ import * as React from "react";
 import { Link } from "gatsby";
 import { useState } from "react";
 import * as nav from "../css/modules/navbar.module.css";
+import { useEffect } from "react";
 
 const Navbar = ({
   pageIndex,
@@ -12,6 +13,18 @@ const Navbar = ({
   navbarColor,
 }) => {
   /* const [index, setIndex] = useState(() => parseInt(pageIndex)); */
+  const [clock, setClock] = useState(new Date());
+
+  useEffect(() => {
+    var timeID = setInterval(() => tick(), 1000);
+    return function cleanup() {
+      clearInterval(timeID);
+    };
+  });
+
+  function tick() {
+    setClock(new Date());
+  }
 
   if (pageIndex == null) {
     pageIndex = "nan";
@@ -55,7 +68,7 @@ const Navbar = ({
         </li>
 
         <li id="nav-time" className={nav.time} style={{ color: timeColor }}>
-          {new Date().toLocaleTimeString()}
+          {/* {new Date().toLocaleTimeString()} */ clock.toLocaleTimeString()}
         </li>
       </ul>
       <div
@@ -67,10 +80,5 @@ const Navbar = ({
     </nav>
   );
 };
-
-setInterval(() => {
-  document.getElementById("nav-time").innerText =
-    new Date().toLocaleTimeString();
-}, 1000);
 
 export default Navbar;

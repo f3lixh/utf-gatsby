@@ -103,7 +103,10 @@
       "isProject": false,
       "isVariable": false,
       "characters": 413,
-      "styles": [],
+      "styles": [
+        "Regular",
+        "Rocks"
+      ],
       "features": [
         "frac",
         "liga",
@@ -128,14 +131,21 @@
       ]
     },
     {
-      "name": "Benny's",
+      "name": "Benny",
       "slug": "bennys",
       "text": "Blog taiyaki wolf, salvia ugh butcher tofu williamsburg copper mug. Literally gastropub everyday carry slow-carb crucifix sartorial activated charcoal forage polaroid beard.",
       "fontIndex": 267,
       "isProject": false,
       "isVariable": false,
       "characters": 336,
-      "styles": [],
+      "styles": [
+        "Regular",
+        "Grunge",
+        "Outlaw",
+        "Western",
+        "College",
+        "Smooth"
+      ],
       "features": [
         "frac",
         "ss01",
@@ -292,7 +302,12 @@
       "isProject": false,
       "isVariable": false,
       "characters": 471,
-      "styles": [],
+      "styles": [
+        "Pixel",
+        "Line",
+        "Shadow",
+        "Outline"
+      ],
       "features": [],
       "date": "2019-09-02T00:00:00.000Z",
       "tags": [

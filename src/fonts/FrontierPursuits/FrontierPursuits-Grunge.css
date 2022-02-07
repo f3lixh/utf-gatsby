@@ -1,0 +1,9 @@
+/* Webfont: FrontierPursuits-Grunge */@font-face {
+    font-family: 'FrontierPursuits';
+    src: url('FrontierPursuits-Grunge.woff2') format('woff2'), /* Modern Browsers */
+         url('FrontierPursuits-Grunge.otf') format('opentype'); /* Safari, Android, iOS */
+             font-style: normal;
+    font-weight: bold;
+    text-rendering: optimizeLegibility;
+}
+

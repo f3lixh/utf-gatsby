@@ -17,7 +17,7 @@
   font-size: var(--navbar-fontSize);
   text-transform: uppercase;
   background-color: white;
-  /* transition: background-color 500ms linear; */
+  transition: background-color 500ms linear;
   position: fixed;
   color: black;
 }
